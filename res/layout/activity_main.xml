@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.graduation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/background_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#20cccccc" >
+
+                <ImageView
+                    android:id="@+id/imageview_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/phone" />
+
+                <TextView
+                    android:id="@+id/local_contacts_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="300"
+                    android:visibility="gone"
+                    android:textColor="@color/blue_font" />
+                 <TextView
+                    android:id="@+id/local_phone_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/imageview_phone"
+                     android:layout_marginTop="3dip"
+                    android:text="xiaomi-M4"
+                    android:visibility="gone"
+                    android:textColor="@color/blue_font" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/imageview_cloud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/cloud" />
+                 <TextView
+                    android:id="@+id/cloud_phone_name"
+                    android:layout_below="@+id/imageview_cloud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dip"
+                    android:text="ZTE-U930HD"
+                    android:visibility="gone"
+                    android:textColor="@color/blue_font" />
+
+                 <TextView
+                     android:id="@+id/cloud_contacts_number"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:layout_marginTop="89dp"
+                     android:text="175"
+                     android:visibility="gone"
+                     android:textColor="@color/blue_font" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/menu_selector" />
+
+    <com.graduation.common.widget.circleProgressButton.CircleProgressButton
+        android:id="@+id/circleButton_backup"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:gra_colorProgress="@color/cpb_blue_dark"
+        app:gra_cornerRadius="5dp"
+        app:gra_textComplete="同步完成"
+        app:gra_textError="同步失敗"
+        app:gra_textIdle="@string/syncontact_contacts" />
+
+</RelativeLayout>

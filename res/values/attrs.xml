@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleProgressButton">
+        <attr name="gra_selectorIdle" format="reference" />
+        <attr name="gra_selectorComplete" format="reference" />
+        <attr name="gra_selectorError" format="reference" />
+        <attr name="gra_textComplete" format="string" />
+        <attr name="gra_textIdle" format="string" />
+        <attr name="gra_textError" format="string" />
+        <attr name="gra_textProgress" format="string" />
+        <attr name="gra_colorProgress" format="color" />
+        <attr name="gra_colorIndicator" format="color" />
+        <attr name="gra_colorIndicatorBackground" format="color" />
+        <attr name="gra_iconError" format="reference" />
+        <attr name="gra_iconComplete" format="reference" />
+        <attr name="gra_cornerRadius" format="dimension" />
+        <attr name="gra_paddingProgress" format="dimension" />
+    </declare-styleable>
+    
+     <declare-styleable name="Preference">
+        <attr name="title" format="string" />
+        <attr name="enabled" format="boolean"></attr>
+        <attr name="persistent" format="boolean"></attr>
+        <attr name="titleCondensed" format="string" />
+        <attr name="alphabeticShortcut" format="string" />
+        <attr name="numericShortcut" format="string" />
+        <attr name="checkable" format="boolean" />
+        <attr name="selectable" format="boolean" />
+        <attr name="orderingFromXml" format="boolean" />
+        <attr name="key" format="string" />
+        <attr name="summary" format="string" />
+        <attr name="order" format="integer" />
+        <attr name="widgetLayout" format="reference" />
+        <attr name="dependency" format="string" />
+        <attr name="defaultValue" format="reference|string|integer|boolean|float" />
+        <attr name="shouldDisableView" format="boolean" />
+        <attr name="summaryOn" format="string" />
+        <attr name="summaryOff" format="string" />
+    </declare-styleable>
+   
+</resources>
